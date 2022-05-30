@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <!-- We only include this to explicitly loosen the CSP of various packager environments. It does not provide any security. -->
   <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: blob:">
-  <title>Untitled Lettuce Game V4</title>
+  <title>Untitled Lettuce Game V4.7</title>
   <style>
     body {
       color: #04ff00;
@@ -323,7 +323,7 @@ scaffolding.addCloudProviderOverride("☁ _High Score", providers["local"] || nu
       });
 
       if (typeof ScaffoldingAddons !== 'undefined') {
-        ScaffoldingAddons.run(scaffolding, {"gamepad":false,"pointerlock":false,"specialCloudBehaviors":true,"unsafeCloudBehaviors":false,"pause":true});
+        ScaffoldingAddons.run(scaffolding, {"gamepad":true,"pointerlock":false,"specialCloudBehaviors":true,"unsafeCloudBehaviors":false,"pause":true});
       }
 
       for (const extension of []) {
