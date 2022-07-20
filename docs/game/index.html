@@ -3,13 +3,31 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/globalassets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/globalassets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/globalassets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/globalassets/favicons/site.webmanifest">
+  <link rel="mask-icon" href="/globalassets/favicons/safari-pinned-tab.svg" color="#44ff00">
+  <link rel="shortcut icon" href="/globalassets/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#44ff00">
+  <meta name="msapplication-config" content="/globalassets/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#44ff00">
+  <!-- EOF -->
+  <!-- Embed info -->
+  <meta content="Untitled Lettuce Game" property="og:title" />
+  <meta content="a game created by @FireBlaster69#1069 with several ideas from @Wawaboy27#5982. dodge trains and collect power ups to gain score faster. fight your way through 7 different bosses. use coins (beans) to unlock skins and upgrades." property="og:description" />
+  <meta content="https:///untitledlettuce.xyz/" property="og:url" />
+  <meta content="https://untitledlettuce.xyz/globalassets/images/embedimage.jpg" property="og:image" />
+  <meta content="#44ff00" data-react-helmet="true" name="theme-color" />
+  <!-- EOF -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <!-- We only include this to explicitly loosen the CSP of various packager environments. It does not provide any security. -->
   <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: blob:">
-  <title>Untitled Lettuce Game V4.7.3</title>
+  <title>Untitled Lettuce Game V5</title>
   <style>
     body {
-      color: #44ff00;
+      color: #4dff00;
       font-family: sans-serif;
       overflow: hidden;
       margin: 0;
@@ -115,10 +133,10 @@
       border-radius: 4px;
     }
     .control-button:hover {
-      background: #02920526;
+      background: #11660026;
     }
     .control-button.active {
-      background: #02920559;
+      background: #11660059;
     }
     .fullscreen-button {
       background: white !important;
@@ -136,7 +154,7 @@
       cursor: auto;
     }
     .sc-monitor-root[opcode^="data_"] .sc-monitor-value-color {
-      background-color: #116600;
+      background-color: #3b9400 !important;
     }
     
   </style>
@@ -158,7 +176,7 @@
 
   <div id="loading" class="screen">
     <noscript>Enable JavaScript</noscript>
-    <h1 class="loading-text">Lettuce-ing...</h1>
+    <h1 class="loading-text">Lettucing...</h1>
     
     <div class="progress-bar-outer"><div class="progress-bar-inner" id="loading-inner"></div></div>
   </div>
@@ -202,7 +220,7 @@
       scaffolding.width = 480;
       scaffolding.height = 720;
       scaffolding.resizeMode = "preserve-ratio";
-      scaffolding.editableLists = true;
+      scaffolding.editableLists = false;
       scaffolding.setup();
       scaffolding.appendTo(appElement);
 
@@ -217,17 +235,17 @@
         videoProvider: vm.runtime.ioDevices.video.provider
       };
 
-      scaffolding.setUsername("username not set?".replace(/#/g, () => Math.floor(Math.random() * 10)));
-      scaffolding.setAccentColor("#029205");
+      scaffolding.setUsername("Username Not Set".replace(/#/g, () => Math.floor(Math.random() * 10)));
+      scaffolding.setAccentColor("#116600");
 
       {const providers = {};
-providers.local = new Scaffolding.Cloud.LocalStorageProvider("cloudvariables:p4-@current-Untitled Lettuce Game V4.7.3.sb3");
+providers.local = new Scaffolding.Cloud.LocalStorageProvider("cloudvariables:p4-@current-Untitled Lettuce Game V4.9.sb3");
 for (const provider of Object.values(providers)) scaffolding.addCloudProvider(provider);
 scaffolding.addCloudProviderOverride("☁ username", providers["local"] || null);
 scaffolding.addCloudProviderOverride("☁ Save Data", providers["local"] || null);
 scaffolding.addCloudProviderOverride("☁ _High Score", providers["local"] || null);
-scaffolding.addCloudProviderOverride("☁ url", providers[""] || null);
-scaffolding.addCloudProviderOverride("☁ redirect", providers[""] || null);
+scaffolding.addCloudProviderOverride("☁ url", providers["local"] || null);
+scaffolding.addCloudProviderOverride("☁ redirect", providers["local"] || null);
 };
 
       const greenFlagButton = document.createElement('img');
@@ -288,7 +306,7 @@ scaffolding.addCloudProviderOverride("☁ redirect", providers[""] || null);
           }
         });
         const otherControlsExist = true;
-        const fillColor = otherControlsExist ? '#575E75' : '#44ff00';
+        const fillColor = otherControlsExist ? '#575E75' : '#4dff00';
         const updateFullScreen = () => {
           isFullScreen = !!(document.fullscreenElement || document.webkitFullscreenElement);
           document.body.classList.toggle('is-fullscreen', isFullScreen);
@@ -339,7 +357,7 @@ scaffolding.addCloudProviderOverride("☁ redirect", providers[""] || null);
       handleError(e);
     }
   </script>
-  
+  <script></script>
   
     <script>
       const getProjectData = (function() {
