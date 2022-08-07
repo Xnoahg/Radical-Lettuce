@@ -316,7 +316,7 @@ scaffolding.addCloudProviderOverride("☁ redirect", providers[""] || null);
       if (vm.renderer.setUseHighQualityRender) vm.renderer.setUseHighQualityRender(false);
       if (vm.setRuntimeOptions) vm.setRuntimeOptions({
         fencing: false,
-        miscLimits: true,
+        miscLimits: false,
         maxClones: 300,
       });
       if (vm.setCompilerOptions) vm.setCompilerOptions({
