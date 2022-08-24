@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <!-- We only include this to explicitly loosen the CSP of various packager environments. It does not provide any security. -->
   <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: blob:">
-  <title>Untitled Lettuce Game</title>
+  <title>Untitled Lettuce Game V5.9</title>
   <style>
     body {
-      color: #00ff00;
+      color: #1ba300;
       font-family: sans-serif;
       overflow: hidden;
       margin: 0;
@@ -112,10 +112,10 @@
       border-radius: 4px;
     }
     .control-button:hover {
-      background: #00990026;
+      background: #04f50026;
     }
     .control-button.active {
-      background: #00990059;
+      background: #04f50059;
     }
     .fullscreen-button {
       background: white !important;
@@ -133,7 +133,13 @@
       cursor: auto;
     }
     .sc-monitor-root[opcode^="data_"] .sc-monitor-value-color {
-      background-color: #003c00 !important;
+      background-color: #237500;
+    }
+    .sc-monitor-row-value-outer {
+      background-color: #1f7500;
+    }
+    .sc-monitor-row-value-editing .sc-monitor-row-value-outer {
+      background-color: #185b00;
     }
     
   </style>
@@ -196,7 +202,7 @@
       setProgress(0.1);
 
       const scaffolding = new Scaffolding.Scaffolding();
-      scaffolding.width = 640;
+      scaffolding.width = 1280;
       scaffolding.height = 720;
       scaffolding.resizeMode = "preserve-ratio";
       scaffolding.editableLists = false;
@@ -214,17 +220,23 @@
         videoProvider: vm.runtime.ioDevices.video.provider
       };
 
-      scaffolding.setUsername("UsernameNotSet".replace(/#/g, () => Math.floor(Math.random() * 10)));
-      scaffolding.setAccentColor("#009900");
+      scaffolding.setUsername("Not-Logged-In".replace(/#/g, () => Math.floor(Math.random() * 10)));
+      scaffolding.setAccentColor("#04f500");
 
       {const providers = {};
-providers.local = new Scaffolding.Cloud.LocalStorageProvider("cloudvariables:p4-@Lettuce Game Final.sb3");
+providers.local = new Scaffolding.Cloud.LocalStorageProvider("cloudvariables:p4-@untitled lettuce game + account features.sb3");
+providers.ws = new Scaffolding.Cloud.WebSocketProvider("ws://71.62.4.216:3000/", "p4-@untitled lettuce game + account features.sb3");
 for (const provider of Object.values(providers)) scaffolding.addCloudProvider(provider);
 scaffolding.addCloudProviderOverride("☁ username", providers["local"] || null);
 scaffolding.addCloudProviderOverride("☁ Save Data", providers["local"] || null);
-scaffolding.addCloudProviderOverride("☁ _High Score", providers["local"] || null);
 scaffolding.addCloudProviderOverride("☁ url", providers[""] || null);
 scaffolding.addCloudProviderOverride("☁ redirect", providers[""] || null);
+scaffolding.addCloudProviderOverride("☁ usertoken", providers["local"] || null);
+scaffolding.addCloudProviderOverride("☁ existing usernames", providers["ws"] || null);
+scaffolding.addCloudProviderOverride("☁ _High Score", providers[""] || null);
+scaffolding.addCloudProviderOverride("☁ usertokens", providers["ws"] || null);
+scaffolding.addCloudProviderOverride("☁ highscores(usertoken score)", providers["ws"] || null);
+scaffolding.addCloudProviderOverride("☁ Logged in?", providers["local"] || null);
 };
 
       const greenFlagButton = document.createElement('img');
@@ -285,7 +297,7 @@ scaffolding.addCloudProviderOverride("☁ redirect", providers[""] || null);
           }
         });
         const otherControlsExist = true;
-        const fillColor = otherControlsExist ? '#575E75' : '#00ff00';
+        const fillColor = otherControlsExist ? '#575E75' : '#1ba300';
         const updateFullScreen = () => {
           isFullScreen = !!(document.fullscreenElement || document.webkitFullscreenElement);
           document.body.classList.toggle('is-fullscreen', isFullScreen);
@@ -336,7 +348,7 @@ scaffolding.addCloudProviderOverride("☁ redirect", providers[""] || null);
       handleError(e);
     }
   </script>
-  <script></script>
+  
   
     <script>
       const getProjectData = (function() {
