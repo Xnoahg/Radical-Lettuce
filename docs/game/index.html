@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <!-- We only include this to explicitly loosen the CSP of various packager environments. It does not provide any security. -->
   <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: blob:">
-  <title>Untitled Lettuce Game V5.9.1</title>
+  <title>Untitled Lettuce Game</title>
   <style>
     body {
       color: #1ba300;
@@ -225,7 +225,7 @@
 
       {const providers = {};
 providers.local = new Scaffolding.Cloud.LocalStorageProvider("cloudvariables:p4-@untitled lettuce game + account features.sb3");
-providers.ws = new Scaffolding.Cloud.WebSocketProvider("ws://71.62.4.216:3000", "p4-@untitled lettuce game + account features.sb3");
+providers.ws = new Scaffolding.Cloud.WebSocketProvider("wss://71.62.4.216:8083", "p4-@untitled lettuce game + account features.sb3");
 for (const provider of Object.values(providers)) scaffolding.addCloudProvider(provider);
 scaffolding.addCloudProviderOverride("☁ username", providers["local"] || null);
 scaffolding.addCloudProviderOverride("☁ Save Data", providers["local"] || null);
