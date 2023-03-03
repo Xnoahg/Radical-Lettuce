@@ -40,36 +40,47 @@
             z-index: 999999;
             text-align: center;
         }
-
-        .image-holder {
-            background: none;
-            position:absolute;
-            left: 45%; 
-            top: 45%;
-            width: 300px;
-            height: 300px;
+        body {
+            margin: 0 0 100px;
+            background: rgb(99,249,128);
+            background: radial-gradient(circle, rgba(99,249,128,1) 0%, rgba(94,237,87,1) 15%, rgba(16,143,66,1) 85%, rgba(19,111,55,1) 100%); 
+            padding: 25px;
         }
-
-        .image-holder img 
-        {
-            background: none;
+        img {
+            display: block;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 300px;
+            margin-bottom: 300px;
+        }
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        footer {
+            background: rgb(99,249,128);
+            background: linear-gradient(135deg, rgba(99,249,128,1) 0%, rgba(94,237,87,1) 15%, rgba(16,143,66,1) 85%, rgba(19,111,55,1) 100%); 
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 100px;
             width: 100%;
-            margin-left: -50%;
-            margin-top: -50%;   
+            overflow: hidden;
         }
-
     </style>
     <script type="text/javascript">
         $('div.image-container').delay(350).fadeOut('slow');
     </script>
 </head>
 <body>
-    <div class="image-container">
-        <p class="image-holder">
-        <img src="loading.gif" />
-        </p>
-    </div>
-
+<img src="loading.gif" alt="loading" class="center"> 
 </body>
+<footer>
+        <p>Soon...</p>
+        
+        <p>Radical Lettuce</p>
+</footer>
 </html>
 
