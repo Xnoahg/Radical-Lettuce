@@ -3,9 +3,30 @@
     <head>
     <style>
         *{
-            background: rgb(204,254,202);
-            background: radial-gradient(circle, rgba(204,254,202,1) 0%, rgba(94,237,87,1) 15%, rgba(16,143,66,1) 85%, rgba(3,77,32,1) 100%); 
+            background: radial-gradient(circle, #2ac307, #5eed57, #108f42, #136f37);
+            background-size: 800% 800%;
+        
+            -webkit-animation: UntitledBackgroundAnimation 29s ease infinite;
+            -moz-animation: UntitledBackgroundAnimation 29s ease infinite;
+            animation: UntitledBackgroundAnimation 29s ease infinite;
         }
+        
+        @-webkit-keyframes UntitledBackgroundAnimation {
+            0%{background-position:0% 4%}
+            50%{background-position:100% 97%}
+            100%{background-position:0% 4%}
+        }
+        @-moz-keyframes UntitledBackgroundAnimation {
+            0%{background-position:0% 4%}
+            50%{background-position:100% 97%}
+            100%{background-position:0% 4%}
+        }
+        @keyframes UntitledBackgroundAnimation {
+            0%{background-position:0% 4%}
+            50%{background-position:100% 97%}
+            100%{background-position:0% 4%}
+        }
+
         div.image-container {
 
             position: fixed;
