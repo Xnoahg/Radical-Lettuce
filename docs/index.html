@@ -42,27 +42,70 @@
             z-index: 999999;
             text-align: center;
         }
-        img {
+        .loading {
             display: block;
             display: block;
             margin-left: auto;
             margin-right: auto;
-            margin-top: 300px;
-            margin-bottom: 300px;
+            margin-top: 125px;
+            margin-bottom: 5%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
         }
         .center {
             margin-left: auto;
             margin-right: auto;
             text-align: center;
         }
+        div.lightbulb {
+            margin-left: 25%;
+            margin-right: auto;
+            text-align: center;
+            margin-top: 2%;
+            vertical-align: top;
+            text-align: center;  
+            width: 50%;
+        }
         footer {
+            margin-top: 150px;
             position: bottom;
             left: 0;
             bottom: 0;
-            height: 125px;
+            height: 180px;
             width: 100%;
             overflow: hidden;
             text-align: center;
+        }
+        .button {
+            border: none;
+            color: white;
+            padding: 4px 8px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        .button1 {
+            background-color: white; 
+            color: black; 
+            border: 2px solid #5865F2;
+        }
+        .button1:hover {
+            background-color: #5865F2;
+            color: white;
+        }
+        .button2 {
+            background-color: white; 
+            color: black; 
+            border: 2px solid #ba0000;
+        }
+        .button2:hover {
+            background-color: #ba0000;
+            color: white;
         }
     </style>
     <script type="text/javascript">
@@ -70,40 +113,75 @@
     </script>
 </head>
 <body>
-<img src="loading.gif" alt="loading" class="center"> 
+<div class="loading">
+    <img src="loading.gif" alt="loading" class="loading"> 
+    <p>Untitled Lettuce Game will return...</p>
+    <p id="Countdown" style="margin-bottom: 150px;">?d ??h ??m ??s</p>
+</div>
+
+<div class="lightbulb">
+    <img 
+        src="lightbulb.png" 
+        class="center"
+        style="width: 320px; height: 250px;"
+    />
+    <p class="caption" id="Countdown-2">?d ??h ??m ??s</span>
+</div>
+
 </body>
 <footer>
-        <p>Coming Soon...</p>
-        <p id="Countdown"></p>
         <p>Radical Lettuce LLC</p>
+        <p>
+            Members include:<br>
+            FireBlaster69 & Wawaboy27 (aka Wawaboy26)
+        </p>
+        <button class="button button2" onclick="window.location.href='https://www.youtube.com/@radicallettuce3114';">
+            <img src="yt.png" style="width: 60px; height: 40px;">
+        </button>
+        <button class="button button1" onclick="window.location.href='https://discord.gg/Z6u75A6tA6';">
+            <img src="discord.png" style="width: 40px; height: 40px;">
+        </button>
 </footer>
 <script>
 // Set the date we're counting down to
 var countDownDate = new Date("Jun 9, 2023 15:37:25").getTime();
+var countDownDate2 = new Date("Mar 10, 2023 15:37:25").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
 
   // Get today's date and time
   var now = new Date().getTime();
+  var now2 = new Date().getTime();
 
   // Find the distance between now and the count down date
   var distance = countDownDate - now;
+  var distance2 = countDownDate2 - now;
 
   // Time calculations for days, hours, minutes and seconds
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  var days2 = Math.floor(distance2 / (1000 * 60 * 60 * 24));
+  var hours2 = Math.floor((distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes2 = Math.floor((distance2 % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds2 = Math.floor((distance2 % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
   document.getElementById("Countdown").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
+  document.getElementById("Countdown-2").innerHTML = "" + days2 + "d " + hours2 + "h "
+  + minutes2 + "m " + seconds2 + "s";
 
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("Countdown").innerHTML = "Any moment now...";
+  }
+  if (distance2 < 0) {
+    clearInterval(x2);
+    document.getElementById("Countdown-2").innerHTML = "Any moment now...";
   }
 }, 1000);
 </script>
