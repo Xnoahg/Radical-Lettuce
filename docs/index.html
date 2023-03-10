@@ -176,7 +176,7 @@
     </div>
 </h1>
 <body>
-<div class="loading" style="">
+<div class="loading">
     <img src="./src/loading.gif" alt="loading" class="loading"> 
     <p>Untitled Lettuce Game will return...</p>
     <p id="Countdown" style="margin-bottom: 150px;">?d ??h ??m ??s</p>
@@ -188,7 +188,7 @@
         class="center"
         style="width: 320px; height: 250px;"
     />
-    <p class="caption" id="Countdown-2">?d ??h ??m ??s</span>
+    <p id="Countdown-2">?d ??h ??m ??s</p>
 </div>
 
 </body>
@@ -215,7 +215,6 @@ var x = setInterval(function() {
 
   // Get today's date and time
   var now = new Date().getTime();
-  var now2 = new Date().getTime();
 
   // Find the distance between now and the count down date
   var distance = countDownDate - now;
@@ -231,20 +230,17 @@ var x = setInterval(function() {
   var minutes2 = Math.floor((distance2 % (1000 * 60 * 60)) / (1000 * 60));
   var seconds2 = Math.floor((distance2 % (1000 * 60)) / 1000);
 
-  // Display the result in the element with id="demo"
-  document.getElementById("Countdown").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-  document.getElementById("Countdown-2").innerHTML = "" + days2 + "d " + hours2 + "h "
-  + minutes2 + "m " + seconds2 + "s";
-
-  // If the count down is finished, write some text
+  // If the countdown is finished display "any moment now..." otherwise just show the countdown. 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("Countdown").innerHTML = "Any moment now...";
-  }
+    document .getElementById("Countdown").innerHTML = "Any moment now...";
+  } else {
+    document.getElementById("Countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+  };
   if (distance2 < 0) {
-    clearInterval(x2);
     document.getElementById("Countdown-2").innerHTML = "Any moment now...";
+  } else {
+    document.getElementById("Countdown-2").innerHTML = "" + days2 + "d " + hours2 + "h " + minutes2 + "m " + seconds2 + "s";
   }
 }, 1000);
 </script>
