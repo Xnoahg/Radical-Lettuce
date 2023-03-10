@@ -1,6 +1,29 @@
 <!DOCTYPE html>
 <html>
-    <head>
+<head>
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./src/favicons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./src/favicons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./src/favicons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./src/favicons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./src/favicons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./src/favicons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./src/favicons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./src/favicons/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="./src/favicons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="./src/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="./src/favicons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./src/favicons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="./src/favicons/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+    
+    
+
     <style>
         body {
             margin: 0 0 0px;
@@ -107,21 +130,54 @@
             background-color: #ba0000;
             color: rgb(105, 105, 105);
         }
+        .game1 {
+            background-color: rgb(11, 192, 5); 
+            color: black; 
+            border: 2px solid #000000;
+        }
+        .game1:hover {
+            background-color: rgb(3, 92, 0);
+            color: rgb(9, 255, 0);
+        }
+        .game2 {
+            background-color: rgb(43, 184, 38); 
+            color: black; 
+            border: 2px solid #000000;
+        }
+        .game2:hover {
+            background-color: rgb(31, 126, 27);
+            color: rgb(9, 255, 0);
+        }
     </style>
     <script type="text/javascript">
         $('div.image-container').delay(350).fadeOut('slow');
     </script>
 </head>
+<title>Radical Lettuce</title>
+<h1>
+    <div class="Navigator" style="text-align: center;">
+        <p class="center">Radical Lettuce</p>
+        <button class="button disabled" disabled="true" onclick="window.location.href='https://index.radicallettuce.xyz/untitled-lettuce/';">
+            <P>Untitle Lettuce Game</P>
+        </button>
+        <button class="button game2" onclick="window.location.href='https://index.radicallettuce.xyz/media-player/';">
+            <P>Media Player</P>
+        </button>
+        <button class="button disabled" disabled="true" onclick="window.location.href='https://index.radicallettuce.xyz/game?not-announced/';">
+            <P>Coming Soon...</P>
+        </button>
+    </div>
+</h1>
 <body>
-<div class="loading">
-    <img src="loading.gif" alt="loading" class="loading"> 
+<div class="loading" style="">
+    <img src="./src/loading.gif" alt="loading" class="loading"> 
     <p>Untitled Lettuce Game will return...</p>
     <p id="Countdown" style="margin-bottom: 150px;">?d ??h ??m ??s</p>
 </div>
 
 <div class="lightbulb">
     <img 
-        src="lightbulb.png" 
+        src="./src/lightbulb.png" 
         class="center"
         style="width: 320px; height: 250px;"
     />
@@ -136,10 +192,10 @@
             FireBlaster69 & Wawaboy27 (aka Wawaboy26)
         </p>
         <button class="button button2" onclick="window.location.href='https://www.youtube.com/@radicallettuce3114';">
-            <img src="yt.png" style="width: 60px; height: 40px;">
+            <img src="./src/yt.png" style="width: 60px; height: 40px;">
         </button>
         <button class="button button1" onclick="window.location.href='https://discord.gg/Z6u75A6tA6';">
-            <img src="discord.png" style="width: 40px; height: 40px;">
+            <img src="./src/discord.png" style="width: 40px; height: 40px;">
         </button>
 </footer>
 <script>
