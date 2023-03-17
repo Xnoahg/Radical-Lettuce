@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Very Un-Radical Error: 404</title>
+    <title>Very Non-Radical Error</title>
 </head>
+<h1>
+    <div class="navigator" style="text-align: center;">
+        <div class="center logo brightness"><img src="./src/logo.png" class="logo center" onclick="window.location.href='https://index.radicallettuce.xyz/' "></div>
+        <p class="center">Radical Lettuce</p>
+        <button class="button disabled" disabled="true" onclick="window.location.href='https://index.radicallettuce.xyz/untitled-lettuce/';">
+            <P>Untitle Lettuce Game</P>
+        </button>
+        <button class="button game2" onclick="window.location.href='https://index.radicallettuce.xyz/media-player/';">
+            <P>Media Player</P>
+        </button>
+        <button class="button disabled" disabled="true" onclick="window.location.href='https://index.radicallettuce.xyz/game?not-announced/';">
+            <P>Coming Soon...</P>
+        </button>
+    </div>
+</h1>
 <body>
-    <h1 class="center">Error 404: Page Not Found</h1>
+    <h1 class="center">Very Non-Radical Error 404: Page Not Found</h1>
     <img class="center" src="./src/lettucedealer.svg">
     <h2 class="center">It appears that the lettuce dealer couldn't find what you are looking for</h2>
     <br>
-    <p class="center">If you were playing a game, and you ended up here after clicking something Please, leave a bug report on our Discord server</p>
+    <p class="center">
+        If you ended up here without typing in the address bar, Please leave a bug report on our Discord server.
+    <br>(also if you press the logo at the top it will bring you back to the homepage)
+</p>
+
 </body>
 <footer>
     <p>Radical Lettuce LLC</p>
@@ -49,6 +68,36 @@
         0%{background-position:0% 4%}
         50%{background-position:100% 97%}
         100%{background-position:0% 4%}
+    }
+    .navigator:hover {
+        background: linear-gradient(220deg, #2ac307, #07dc5a, #136f37);
+        background-size: 600% 600%;
+    
+        -webkit-animation: NavigatorAnimation 6s ease infinite;
+        -moz-animation: NavigatorAnimation 6s ease infinite;
+        -o-animation: NavigatorAnimation 6s ease infinite;
+        animation: NavigatorAnimation 6s ease infinite;
+    }
+    
+    @-webkit-keyframes NavigatorAnimation {
+        0%{background-position:55% 0%}
+        50%{background-position:46% 100%}
+        100%{background-position:55% 0%}
+    }
+    @-moz-keyframes NavigatorAnimation {
+        0%{background-position:55% 0%}
+        50%{background-position:46% 100%}
+        100%{background-position:55% 0%}
+    }
+    @-o-keyframes NavigatorAnimation {
+        0%{background-position:55% 0%}
+        50%{background-position:46% 100%}
+        100%{background-position:55% 0%}
+    }
+    @keyframes NavigatorAnimation {
+        0%{background-position:55% 0%}
+        50%{background-position:46% 100%}
+        100%{background-position:55% 0%}
     }
     footer {
         margin-top: 150px;
@@ -95,6 +144,49 @@
     .button2:hover {
         background-color: #ba0000;
         color: rgb(105, 105, 105);
+    }
+    .game1 {
+        background-color: rgb(11, 192, 5); 
+        color: black; 
+        border: 2px solid #000000;
+    }
+    .game1:hover {
+        background-color: rgb(3, 92, 0);
+        color: rgb(9, 255, 0);
+    }
+    .game2 {
+        background-color: rgb(43, 184, 38); 
+        color: black; 
+        border: 2px solid #000000;
+    }
+    .game2:hover {
+        background-color: rgb(31, 126, 27);
+        color: rgb(9, 255, 0);
+    }
+    .game3 {
+        background-color: rgb(43, 184, 38); 
+        color: black; 
+        border: 2px solid #000000;
+    }
+    .game3:hover {
+        background-color: rgb(31, 126, 27);
+        color: rgb(9, 255, 0);
+    }
+    .disabled {
+        background-color: rgba(51, 51, 51, 0.3); 
+        color: rgba(137, 255, 166, 0.4);
+        border: 2px solid #000000;
+    }
+    .disabled:hover {
+        background-color: rgb(51, 51, 51, 0.1); 
+        color: rgba(137, 255, 166, 0.2);
+    }
+    .logo {
+        width: 120px;
+        height: 120px;
+    }
+    .logo:hover { 
+        filter: brightness(75%); 
     }
 </style>
 </html>
