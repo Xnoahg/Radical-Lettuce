@@ -1,7 +1,5 @@
 # lettucegame.github.io
-untitled lettuce game (hosted via pages)
-Untitled lettuce game is a game kinda like subway surfers i made a while back entirely in scratch as a chalenge.
-the problem is its bigger than scratch can handle, so i used turbowarp packager to make it into a website.
-i went back and forth trying to find somewhere to host it but nothing worked well or just plain out didnt work at all.
-then i remembered github has webhosting so im trying it out
-- Github TYSM pages is a lifesaver
+my website (radicallettuce.com)
+me and 2 other people make some goofy ahh games and i made a website for them.
+the goal is to have them all in one place and witb some sort of account system so everyones highscores are shared
+also we plan to store save data with accounts and show updates/patchnotes here aswell
