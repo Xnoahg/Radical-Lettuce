@@ -34,9 +34,9 @@
             background: radial-gradient(circle, #2ac307, #5eed57, #108f42, #136f37);
             background-size: 800% 800%;
         
-            -webkit-animation: UntitledBackgroundAnimation 29s ease infinite;
-            -moz-animation: UntitledBackgroundAnimation 29s ease infinite;
-            animation: UntitledBackgroundAnimation 29s ease infinite;
+            -webkit-animation: UntitledBackgroundAnimation 15s ease infinite;
+            -moz-animation: UntitledBackgroundAnimation 15s ease infinite;
+            animation: UntitledBackgroundAnimation 15s ease infinite;
         }
         
         @-webkit-keyframes UntitledBackgroundAnimation {
@@ -150,6 +150,35 @@
         .logo:hover { 
             filter: brightness(75%); 
         }
+        .pre {
+            white-space: pre;
+            font-size: 16px;
+            background-color: aquamarine;
+        }
+
+        .pre-wrap {
+            white-space: pre-wrap;
+        }
+        #progressbar {
+        background-color: black;
+        border-radius: 13px;
+        /* (height of inner div) / 2 + padding */
+        padding: 3px;
+        }
+
+        #progressbar>div {
+        background-color: rgba(111, 255, 0, 0.674);
+        width: 50%;
+        /* Adjust with JavaScript */
+        height: 50px;
+        border-radius: 10px;
+        }
+        .progtext {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            border-radius: 8px;;
+        }
     </style>
     <!-- I'm not quite sure what this does but i know it's importnant -->
     <script type="text/javascript">
@@ -171,51 +200,55 @@
         </p>
     </div>
     
-
-    <div style="background-color: aquamarine;">
-        <h3>Development Progress</h3>
-        <p style="font-size: 12px;">
-        --------☐ Basic Gameplay<br>
-        ------------☐ Entity Spawning<br>
-        -------------☑ Increasing Speed<br>
-        -------------☑ Train Spawner<br>
-        -------------☑ Coin Spawner<br>
-        -------------☐ Powerup Spawner<br>
-        ------------☐ Score System<br>
-        --------☐ Menus<br>
-        ------------☐ Main Menu<br>
-        --------------☐ Lettuce Customs<br>
-        ---------------☐ Purchase Options<br>
-        ---------------☐ Basic Menu Functionality<br>
-        ---------------☐ Decoration<br>
-        --------------☐ Lettuce Dealer<br>
-        ---------------☐ Purchase Options <br>
-        ---------------☑ Basic Menu Functionality<br>
-        ---------------☑ Decoration<br>
-        --------------☑ Basic Main Menu Functionality<br>
-        ---------------☑ Main Buttons<br>
-        ---------------☑ Main Click Animations<br>
-        ---------------☑ Main Hover Animations<br>
-        --------☐ Music<br>
-        ----------☑ Main Menu<br>
-        ----------☑ Lettuce Dealer<br>
-        ----------☐ Lettuce Customs<br>
-        ----------☐ Gameplay Themes<br>
-        -----------☐ Clasic<br>
-        -----------☐ Remastered<br>
-        -----------☐ Pixl<br>
-        -----------☐ Drip<br>
-        -----------☐ Chad<br>
-        ----------☐ SFX<br>
-        --------☐ Account System<br>
-        ----------☐ Save Systen<br>
-        ----------☐ Cloud Save System<br>
-        ----------☐ Online Highscore Sharing<br>
-        ----------? Multiplayer<br><br>
-        Note: May NOT be up to date
-        </p>
+    <div id="progressbar">
+        <div><div class="progtext">Development Progress (~50%)</div></div>
     </div>
+        <div class="pre">
+        ☐ First Release
+                ☑ Basic Gameplay
+                    ☑ Entity Spawning
+                    ☑ Increasing Speed
+                    ☑ Train Spawner
+                    ☑ Coin Spawner
+                    ☑ Powerup Spawner
+                    ☑ Score System
+                ☐ Menus
+                    ☐ Main Menu
+                        ☑ Basic Main Menu Functionality
+                        ☑ Main Buttons
+                        ☑ Main Click Animations
+                        ☑ Main Hover Animations
+                    ☐ Lettuce Customs
+                        ☐ Purchase Options
+                        ☐ Basic Menu Functionality
+                        ☐ Decoration
+                    ☐ Lettuce Dealer
+                        ☐ Purchase Options 
+                        ☑ Basic Menu Functionality
+                        ☑ Decoration
+                ☐ Music
+                    ☑ Main Menu
+                    ☑ Lettuce Dealer
+                    ☐ Lettuce Customs
+                        ☐ Gameplay Themes
+                            ☐ Clasic
+                            ☐ Remastered
+                            ☐ Pixl
+                            ☐ Drip
+                            ☐ Chad
+                        ☐ SFX
+                ☐ Account System
+                    ☐ Save Systen
+                    ☐ Cloud Save System
+                    ☐ Online Highscore Sharing
+                    ? Multiplayer
+                ☐ Misc Additions
+                    ☐ nothing yet
+                ☐ Others
+                    ☐ Beta Release
+                    ☐ Playtesting
 
+        </div>
         
 
 </body>
