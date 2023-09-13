@@ -258,10 +258,8 @@
     console.log(myURL.searchParams.getAll('redirectURL'));
     if (Redirect = 'https://radicallettuce.xyz') {
         console.log('came from old site');
-        prompt();
         alert("it looks like you went to our old URL https://radicallettuce.xyz we've moved to https://radicallettuce.com now and the old URL will stop working soon, so please use the new URL!");
-    } else {
-        console.log('did not come from old site');
+        window.location.replace("http://radicallettuce.com");
     }
 
 </script>
