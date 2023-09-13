@@ -219,7 +219,7 @@
     
 <div class="loading">
     <img src="./src/loading.gif" alt="loading" class="loading"> 
-    <p>soon.</p>
+    <p>Untitled Lettuce</p>
     <p  style="margin-bottom: 150px;">Remasteration in progress...</p>
 </div>
 
@@ -257,7 +257,11 @@
     console.log(Redirect);
     console.log(myURL.searchParams.getAll('redirectURL'));
     if (Redirect = 'https://radicallettuce.xyz') {
-        alert("it looks like you went to our old URL https://radicallettuce.xyz we've moved to https://radicallettuce.com now and the old URL will stop working soon, so please use the new URL!")
+        console.log('came from old site');
+        prompt();
+        alert("it looks like you went to our old URL https://radicallettuce.xyz we've moved to https://radicallettuce.com now and the old URL will stop working soon, so please use the new URL!");
+    } else {
+        console.log('did not come from old site');
     }
 
 </script>
