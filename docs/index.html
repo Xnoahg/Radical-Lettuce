@@ -253,7 +253,7 @@
 </body>
 <script>
     const myURL = new URL(window.location.toLocaleString());
-    const Redirect = myURL.searchParams.get('redirectURL');
+    const Redirect = toString(myURL.searchParams.get('redirectURL'));
     console.log(Redirect);
     if (Redirect === "old") {
         console.log('came from old site');
