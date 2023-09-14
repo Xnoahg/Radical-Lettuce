@@ -256,7 +256,7 @@
     const Redirect = myURL.searchParams.get('redirectURL');
     console.log(Redirect);
     console.log(myURL.searchParams.getAll('redirectURL'));
-    if (Redirect = 'https://radicallettuce.xyz') {
+    if (String(Redirect) = 'old') {
         console.log('came from old site');
         alert("it looks like you went to our old URL https://radicallettuce.xyz we've moved to https://radicallettuce.com now and the old URL will stop working soon, so please use the new URL!");
         window.location.replace("http://radicallettuce.com");
