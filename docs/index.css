@@ -1,0 +1,240 @@
+
+body {
+    margin: 0 0 0px;
+    padding: 25px;
+    background: radial-gradient(circle, #2ac307, #5eed57, #108f42, #136f37);
+    background-size: 300% 300%;
+
+    -webkit-animation: UntitledBackgroundAnimation 10s ease infinite;
+    -moz-animation: UntitledBackgroundAnimation 10s ease infinite;
+    animation: UntitledBackgroundAnimation 10s ease infinite;
+}
+
+@-webkit-keyframes UntitledBackgroundAnimation {
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
+}
+@-moz-keyframes UntitledBackgroundAnimation {
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
+}
+@keyframes UntitledBackgroundAnimation {
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
+}
+
+div.image-container {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    background-color: #fff; 
+    z-index: 999999;
+    text-align: center;
+}
+.loading {
+    display: block;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 125px;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.center {
+    
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+div.lightbulb {
+    text-align: center;
+    margin-bottom: 12%;
+}
+footer {
+    margin-top: 150px;
+    position: bottom;
+    left: 0;
+    bottom: 0;
+    height: 180px;
+    width: 100%;
+    overflow: show;
+    text-align: center;
+}
+.button {
+    border-radius: 12px;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button1 {
+    background-color: rgb(0, 0, 0); 
+    color: black; 
+    border: 2px solid #5865F2;
+}
+.button1:hover
+{
+    background-color: #5865F2;
+    color: rgb(105, 105, 105);
+}
+.button2 {
+    background-color: rgb(0, 0, 0); 
+    color: black; 
+    border: 2px solid #ba0000;
+}
+.button2:hover {
+    background-color: #ba0000;
+    color: rgb(105, 105, 105);
+}
+.game1 {
+    background-color: rgb(11, 192, 5); 
+    color: black; 
+    border: 2px solid #000000;
+}
+.game1:hover {
+    background-color: rgb(3, 92, 0);
+    color: rgb(9, 255, 0);
+}
+.game2 {
+    background-color: rgb(43, 184, 38); 
+    color: black; 
+    border: 2px solid #000000;
+}
+.game2:hover {
+    background-color: rgb(31, 126, 27);
+    color: rgb(9, 255, 0);
+}
+.game3 {
+    background-color: rgb(43, 184, 38); 
+    color: black; 
+    border: 2px solid #000000;
+}
+.game3:hover {
+    background-color: rgb(31, 126, 27);
+    color: rgb(9, 255, 0);
+}
+.disabled {
+    background-color: rgba(51, 51, 51, 0.3); 
+    color: rgba(137, 255, 166, 0.4);
+    border: 2px solid #000000;
+}
+.disabled:hover {
+    background-color: rgb(51, 51, 51, 0.1); 
+    color: rgba(137, 255, 166, 0.2);
+}
+.logo {
+    width: 120px;
+    height: 120px;
+}
+.logo:hover { 
+    filter: brightness(75%); 
+}
+#ifrm1 {
+opacity: 0;
+transition: opacity 5s ease-in-out;
+display: block
+}
+#trig1:hover + iframe {
+opacity: 1;
+transition: opacity 1s ease;
+display: block
+}
+
+#loading-text::before { 
+    content: ""; 
+    animation: loading-text-animate infinite 10s; 
+    padding-left: 10px; 
+} 
+
+@keyframes loading-text-animate {
+    /* This abomination makes text change to FIVE SPECIFIC things
+    and it fades in and out, no way
+     */
+    0%, 8% {opacity: 1;}
+    8%,12% {opacity: 0;} 
+    12%, 20% {opacity: 1;}
+    28%,32% {opacity: 0;}
+    32%, 40% {opacity: 1;}
+    48%,52% {opacity: 0;}
+    52%, 60% {opacity: 1;}
+    68%,72% {opacity: 0;}
+    72%, 80% {opacity: 1;}
+    84%,88% {opacity: 0;}
+    92%, 100% {opacity: 1;}
+
+
+    0% { 
+        content: "Lightbulb Game Coming Soon...";
+    }
+    20% { 
+        content: "Untitled Lettuce"; 
+    } 
+    40% { 
+        content: "Remasteration in Progress"; 
+    } 
+    60% { 
+        content: "Play The Beta"; 
+    }
+    80% { 
+        content: "Join The Discord!"; 
+    } 
+    100% { 
+        content: "Lightbulb Game Coming Soon...";
+    }
+} 
+#footer-text::before { 
+    content: "\A\A\A\A";
+    animation: footer-text-animate infinite 10s;
+    white-space: pre; /* this is important */ 
+} 
+@keyframes footer-text-animate {
+    /* This abomination makes text change to FIVE SPECIFIC things
+    and it fades in and out, no way
+     */
+    0%, 8% {opacity: 1;}
+    8%,12% {opacity: 0;} 
+    12%, 20% {opacity: 1;}
+    28%,32% {opacity: 0;}
+    32%, 40% {opacity: 1;}
+    48%,52% {opacity: 0;}
+    52%, 60% {opacity: 1;}
+    68%,72% {opacity: 0;}
+    72%, 80% {opacity: 1;}
+    84%,88% {opacity: 0;}
+    92%, 100% {opacity: 1;}
+
+
+    0% { 
+        content: "FireBlaster69";
+    }
+    20% { 
+        content: "WawaBoy26"; 
+    } 
+    40% { 
+        content: "Esburger"; 
+    } 
+    60% { 
+        content: "Honorary Mention: Ur Mom"; 
+    }
+    80% { 
+        content: "Honorary Mention: Marcelo"; 
+    } 
+    100% { 
+        content: "FireBlaster69";
+    }
+} 
