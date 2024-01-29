@@ -107,9 +107,11 @@ footer {
     border: 2px solid #757575;
 }
 .button3:hover {
-    background-color: #757575; 
+    background-color: #757575;
     color: rgb(105, 105, 105);
 }
+
+
 .game1 {
     background-color: rgb(11, 192, 5); 
     color: black; 
