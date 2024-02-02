@@ -47,9 +47,6 @@
 <?php if (isset($_POST['register'])) { 
 include_once 'connect.php';
 
-// Connect to the database 
-$mysqli = new mysqli("localhost", "username", "password", "login_system"); 
-
 // Check for errors 
 if ($mysqli->connect_error) { die("Connection failed: " . $mysqli->connect_error); } 
 
