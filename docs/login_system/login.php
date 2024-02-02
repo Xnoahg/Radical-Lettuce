@@ -19,22 +19,8 @@
     </div>
     
 </h1>
-<div class="endofpage center">
-    <p style=>Radical Lettuce LLC<br>Our Team:</p>
-    <div id="footer-text" animation-iteration-count: infinite; style="text-align: center;"><p id="pulsing center"></p></div>
-    <button class="button button2" onclick="window.location.href='https://www.youtube.com/@radicallettuce3114';">
-        <img src="../src/yt.png" style="width: 60px; height: 40px;">
-    </button>
-    <button class="button button3"  onclick="window.location.href='https://github.com/xnoahg/Radical-Lettuce'">
-        <img src="../src/github.png" style="width: 40px; height: 40px;"></img>
-    </button>
-    <a class="center" href='#/' id='trig1'><button class="button button1" onclick="window.location.href='https://discord.gg/Z6u75A6tA6';">
-        <img src="../src/discord.png" style="width: 40px; height: 40px;">
-    </button></a>
-    <iframe class="center" id='ifrm1' name='ifrm1' src="https://discord.com/widget?id=1083276910169182268&theme=dark" width="280" height="320" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-</div>
 
-<form action="login.php" method="post">
+<form action="login.php" method="post" class="form">
 
 
   <div class="container">
