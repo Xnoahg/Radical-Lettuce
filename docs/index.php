@@ -1,3 +1,7 @@
+<?php
+session_start();
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -52,6 +56,7 @@
                 <P>Lightbulb Joyride</P>
             </button>
         </span>
+        <p id="username" class="center"></p>
     </div>
     
 </h1>
@@ -84,3 +89,9 @@
 <script type="text/javascript" src="index.js"></script>
 </html>
 
+
+
+<script type="text/javascript">
+var uname="<?php echo $_SESSION['username']; ?>";
+document.getElementById('username').innerHTML = "logged in as: " + uname;
+</script>
