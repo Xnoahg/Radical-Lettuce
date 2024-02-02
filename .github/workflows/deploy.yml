@@ -19,13 +19,6 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: pull repository on server
-        run: cd /var/www/Radical-Lettuce && sudo git pull
+        run: ./home/xnoahg/actions-runner/deploy.sh
     
-  reload:
-    runs-on: self hosted
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: reload apache2 webserver
-      - run: sudo systemctl restart apache2
 
