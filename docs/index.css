@@ -276,6 +276,7 @@ input[type=text], input[type=password] {
 /* Add padding to containers */
 .container {
     padding: 16px;
+    text-align: center;
 }
 .registerbtn {
     background-color: #04AA6D;
