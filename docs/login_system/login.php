@@ -28,6 +28,9 @@
     <br>
     <input name="login" type="submit" value="Login" />
   </div>
+  <div class="container  center">
+    <p>Don't have an account? <a href="https://radicallettuce.com/login_system/register.php">Sign Up Here!</a>.</p>
+  </div>
 </form>
 <link rel="stylesheet" href="../index.css">
 
