@@ -17,6 +17,6 @@ jobs:
 
     steps:
       - name: pull repository on server
-        run: ./home/xnoahg/actions-runner/deploy.sh
+        run: /home/xnoahg/actions-runner/deploy.sh
     
 
