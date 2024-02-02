@@ -3,9 +3,6 @@
         <span class="center" style="text-align: center;">
             <div class="center logo brightness"><img src="../src/logo.png" class="logo center" onclick="window.location.href='https://radicallettuce.com/' "></div>
             <p class="center">Radical Lettuce</p>
-            <button class="button disabled" disabled="true" onclick="window.location.href='https://radicallettuce.com/login_system/register.php';">
-                <P>Lettuce Account (coming soon)</P>
-            </button>
             <button class="button game1"  onclick="window.location.href='https://radicallettuce.com/untitled-lettuce/';">
                 <P>[BETA] Untitled Lettuce Remastered</P>
             </button>
@@ -21,9 +18,7 @@
 </h1>
 
 <form action="login.php" method="post" class="form">
-
-
-  <div class="container">
+  <div class="container center">
     <label for="username"><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="username" required id="username">
 
