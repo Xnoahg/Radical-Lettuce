@@ -56,7 +56,7 @@ session_start();
                 <P>Lightbulb Joyride</P>
             </button>
         </span>
-        <p id="username" class="center"></p>
+        <p id="username" class="center uname-readout"></p>
     </div>
     
 </h1>
@@ -93,5 +93,9 @@ session_start();
 
 <script type="text/javascript">
 var uname="<?php echo $_SESSION['username']; ?>";
-document.getElementById('username').innerHTML = "logged in as: " + uname;
+if (uname = "") {
+    document.getElementById('username').innerHTML = " You're not logged in.";
+} else {
+    document.getElementById('username').innerHTML = "Hello " + uname;
+}
 </script>
