@@ -1,0 +1,31 @@
+name: deploy
+
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+
+  workflow_dispatch:
+
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: pull repository on server
+        run: cd /var/www/Radical-Lettuce && git pull
+    
+  reload:
+    runs-on: self hosted
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: reload apache2 webserver
+      - run: systemctl restart apache2
+
