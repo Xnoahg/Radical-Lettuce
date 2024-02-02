@@ -66,7 +66,7 @@ if (password_verify($password, $hashed_password)) {
 $_SESSION['loggedin'] = true; $_SESSION['id'] = $id; $_SESSION['username'] = $username; 
 
 // Redirect to the user's dashboard 
-header("Location: dashboard.php"); exit; } else { echo "Incorrect password!"; } } else { echo "User not found!"; } 
+header("Location: ../index.php"); exit; } else { echo "Incorrect password!"; } } else { echo "User not found!"; } 
 
 // Close the connection 
 $stmt->close(); $mysqli->close(); }
