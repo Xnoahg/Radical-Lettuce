@@ -2,7 +2,7 @@
     <div class="navigator" style="text-align: center;">
         <span class="center" style="text-align: center;">
             <div class="center logo brightness"><img src="../src/logo.png" class="logo center" onclick="window.location.href='https://radicallettuce.com/' "></div>
-            <p class="center">Radical Lettuce</p>
+            <p class="center">Radical Lettuce Online</p>
             <button class="button game1"  onclick="window.location.href='https://radicallettuce.com/untitled-lettuce/';">
                 <P>[BETA] Untitled Lettuce Remastered</P>
             </button>
@@ -19,12 +19,13 @@
 
 <form action="login.php" method="post" class="form">
   <div class="container center">
+    <h1>Sign in to your Radical Lettuce Online Account</h1>
     <label for="username"><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="username" required id="username">
-
+    <br>
     <label for="password"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="password" required id="password">
-
+    <br>
     <input name="login" type="submit" value="Login" />
   </div>
 </form>
