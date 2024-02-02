@@ -1,7 +1,4 @@
 <form action="login.php" method="post">
-  <div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar" class="avatar">
-  </div>
 
   <div class="container">
     <label for="username"><b>Username</b></label>
