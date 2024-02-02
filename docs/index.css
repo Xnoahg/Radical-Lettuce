@@ -138,6 +138,15 @@ footer {
     background-color: rgb(31, 126, 27);
     color: rgb(9, 255, 0);
 }
+.account {
+    background-color: rgb(43, 184, 38); 
+    color: black; 
+    border: 2px solid #000000;
+}
+.account:hover {
+    background-color: rgb(31, 126, 27);
+    color: rgb(9, 255, 0);
+}
 .disabled {
     background-color: rgba(51, 51, 51, 0.3); 
     color: rgba(137, 255, 166, 0.4);
