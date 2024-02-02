@@ -37,7 +37,7 @@
 <?php session_start(); if (isset($_POST['login'])) { 
 
 // Connect to the database 
-include 'connect.php';
+include_once 'connect.php';
 // Check for errors 
 if ($mysqli->connect_error) { die("Connection failed: " . $mysqli->connect_error); } 
 

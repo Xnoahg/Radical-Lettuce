@@ -45,7 +45,7 @@
 <link rel="stylesheet" href="../index.css">
 
 <?php if (isset($_POST['register'])) { 
-include 'connect.php';
+include_once 'connect.php';
 
 // Connect to the database 
 $mysqli = new mysqli("localhost", "username", "password", "login_system"); 
