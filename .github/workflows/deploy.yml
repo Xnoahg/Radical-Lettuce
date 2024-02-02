@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: pull repository on server
-        run: cd /var/www/Radical-Lettuce && git pull
+        run: cd /var/www/Radical-Lettuce && sudo git pull
     
   reload:
     runs-on: self hosted
@@ -27,5 +27,5 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: reload apache2 webserver
-      - run: systemctl restart apache2
+      - run: sudo systemctl restart apache2
 
