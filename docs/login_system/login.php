@@ -39,7 +39,7 @@
 // Connect to the database 
 include_once 'connect.php';
 // Check for errors 
-if ($mysqli->connect_error) { die("Connection failed: " . $mysqli->connect_error); } 
+// if ($mysqli->connect_error) { die("Connection failed: " . $mysqli->connect_error); } 
 
 // Prepare and bind the SQL statement 
 $stmt = $mysqli->prepare("SELECT id, password FROM users WHERE username = ?"); $stmt->bind_param("s", $username); 
