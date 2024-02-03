@@ -64,4 +64,4 @@ if ($stmt->execute()) { echo "New account created successfully!"; } else { echo 
 
 // Close the connection 
 $stmt->close(); $mysqli->close(); }
-
+?>

@@ -24,7 +24,7 @@
     <input type="text" placeholder="Enter Username" name="username" required id="username">
     <br>
     <label for="password"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="password" required id="password">
+    <input type="password" pl0aceholder="Enter Password" name="password" required id="password">
     <br>
     <input name="login" type="submit" value="Login" />
   </div>
@@ -70,3 +70,4 @@ header("Location: ../index.php"); exit; } else { echo "Incorrect password!"; } }
 
 // Close the connection 
 $stmt->close(); $mysqli->close(); }
+?>
