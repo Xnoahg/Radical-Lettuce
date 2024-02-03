@@ -5,7 +5,7 @@ if (isset($_POST['login'])) {
     include_once 'connect.php';
     // Check for errors 
     // if ($mysqli->connect_error) { die("Connection failed: " . $mysqli->connect_error); } 
-
+    error_log("Connection failed: " . $mysqli->connect_error);
     // Prepare and bind the SQL statement 
     $stmt = $mysqli->prepare("SELECT id, password FROM users WHERE username = ?"); $stmt->bind_param("s", $username); 
 
@@ -43,7 +43,7 @@ if (isset($_POST['register'])) {
     
     // Check for errors 
     if ($mysqli->connect_error) { die("Connection failed: " . $mysqli->connect_error); } 
-    
+    error_log("Connection failed: " . $mysqli->connect_error);
     // Prepare and bind the SQL statement 
     $stmt = $mysqli->prepare("INSERT INTO users (username, email, password) VALUES (?, ?, ?)"); $stmt->bind_param("sss", $username, $email, $password); 
     
