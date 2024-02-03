@@ -20,12 +20,6 @@
 <form action="account.php" method="post" class="form">
   <div class="container center">
     <h1>Sign in to your Radical Lettuce Online Account</h1>
-    <label for="username"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="username" required id="username">
-    <br>
-    <label for="password"><b>Password</b></label>
-    <input type="password" pl0aceholder="Enter Password" name="password" required id="password">
-    <br>
     <input name="login" type="submit" value="Login" />
   </div>
   <div class="container  center">
@@ -33,4 +27,3 @@
   </div>
 </form>
 <link rel="stylesheet" href="../index.css">
-
