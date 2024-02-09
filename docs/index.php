@@ -1,6 +1,7 @@
 <?php
+$vist_page     =   "index.php";
+include "logger.php";
 session_start();
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -99,3 +100,4 @@ if (uname = "") {
     document.getElementById('username').innerHTML = "Hello " + uname;
 }
 </script>
+
