@@ -1,4 +1,8 @@
-
+<?php
+$vist_page     =   "index.php";
+include "logger.php";
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -97,18 +101,3 @@ if (uname = null) {
 }
 </script>
 
-<?php
-
-if (isset($_SESSION['auth'])) {
-
-    header("Location: home");
-    exit();
-}
-else {
-
-    header("Location: login");
-    exit();
-}
-
-
-?>
