@@ -93,11 +93,11 @@ session_start();
 
 
 <script type="text/javascript">
-var uname="<?php echo $_SESSION['username']; ?>";
-if (uname = null) {
-    document.getElementById('username').innerHTML = " You're not logged in.";
-} else {
-    document.getElementById('username').innerHTML = "Hello " + uname;
-}
+//var uname="<?php echo $_SESSION['username']; ?>";
+//if (uname == '') {
+//    document.getElementById('username').innerHTML = " You're not logged in.";
+//} else {
+//    document.getElementById('username').innerHTML = "Hello " + uname;
+//}
 </script>
 
