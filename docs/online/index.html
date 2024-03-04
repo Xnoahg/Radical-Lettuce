@@ -220,18 +220,18 @@
         videoProvider: vm.runtime.ioDevices.video.provider
       };
 
-      scaffolding.setUsername("player####".replace(/#/g, () => Math.floor(Math.random() * 10)));
+      scaffolding.setUsername("Guest###########".replace(/#/g, () => Math.floor(Math.random() * 10)));
       scaffolding.setAccentColor("#00c3ff");
 
       try {
         {const providers = {};
-providers.ws = new Scaffolding.Cloud.WebSocketProvider("wss://radicallettuce.com/webscoket", "Radical-Lettuce-Online");
 providers.local = new Scaffolding.Cloud.LocalStorageProvider("cloudvariables:Radical-Lettuce-Online");
+providers.ws = new Scaffolding.Cloud.WebSocketProvider("wss://radicallettuce.com/webscoket", "Radical-Lettuce-Online");
 for (const provider of Object.values(providers)) scaffolding.addCloudProvider(provider);
-scaffolding.addCloudProviderOverride("☁ existing usernames", providers["ws"] || null);
-scaffolding.addCloudProviderOverride("☁ userdb", providers["ws"] || null);
 scaffolding.addCloudProviderOverride("☁ encrypted password", providers[""] || null);
 scaffolding.addCloudProviderOverride("☁ username", providers["local"] || null);
+scaffolding.addCloudProviderOverride("☁ existing usernames", providers["ws"] || null);
+scaffolding.addCloudProviderOverride("☁ userdb", providers["ws"] || null);
 };
       } catch (error) {
         console.error(error);
