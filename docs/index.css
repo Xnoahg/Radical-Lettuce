@@ -198,22 +198,22 @@ display: block
 
 
     0% { 
-        content: "Somethings intresting is hapening...";
+        content: "Somethings Interesting is Hapening...";
     }
     20% { 
-        content: "Untitled Lettuce is changing..."; 
+        content: "Untitled Lettuce is Changing..."; 
     } 
     40% { 
         content: "Will it actually be good?"; 
     } 
     60% { 
-        content: "Check back soon..."; 
+        content: "Check Back Soon..."; 
     }
     80% { 
         content: "Join The Discord!"; 
     } 
     100% { 
-        content: "Somethings intresting is hapening...";
+        content: "Somethings Interesting is Hapening...";
     }
 } 
 #footer-text::before { 
