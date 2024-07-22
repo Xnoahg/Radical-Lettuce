@@ -198,22 +198,22 @@ display: block
 
 
     0% { 
-        content: "Lightbulb Game Coming Soon...";
+        content: "Somethings intresting is hapening...";
     }
     20% { 
-        content: "Untitled Lettuce"; 
+        content: "Untitled Lettuce is changing..."; 
     } 
     40% { 
-        content: "Remasteration in Progress"; 
+        content: "We're Going 3D"; 
     } 
     60% { 
-        content: "Play The Beta"; 
+        content: "Check back soon..."; 
     }
     80% { 
         content: "Join The Discord!"; 
     } 
     100% { 
-        content: "Lightbulb Game Coming Soon...";
+        content: "Somethings intresting is hapening...";
     }
 } 
 #footer-text::before { 
